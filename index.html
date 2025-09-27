@@ -1,91 +1,108 @@
-Tabitha Glorya Yobelitha Sirait
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <title>Profil Mahasiswa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
 
-        img {
-            width: 150px;   
-            height: 150px;
-            border-radius: 50%; 
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin: auto;
+    }
 
-        table {
-            border-collapse: collapse;
-            width: 50%;
-            text-align: center;
-            margin-bottom: 20px; 
-        }
+    td, th {
+      padding: 8px;
+      text-align: left;
+    }
 
-        td {
-            padding: 10px;
-        }
+    th {
+      width: 30px;
+      text-align: center;
+    }
 
-        a {
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-        }
+    /* Foto profil bulat */
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid black;
+      margin: 15px;
+    }
 
-        .instagram-icon {
-            width: 40px;
-            height: 40px;
-        }
-    </style>
+    /* Icon sosmed bulat */
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      border-radius: 50%;
+      border: 1px solid black;
+      text-align: center;
+      line-height: 50px;
+      text-decoration: none;
+      font-size: 14px;
+      color: black;
+      background-color: #f2f2f2;
+    }
+
+    .social-icons a:hover {
+      background-color: lightgray;
+    }
+  </style>
 </head>
 <body>
 
-    <img src="/WhatsApp Image 2025-09-27 at 12.31.04_17ec25b6.jpg" alt="Foto Profil">
+  <h2>Profil Mahasiswa</h2>
 
-    <table border="3">
-        <tr>
-          <td>Nama</td>
-          <td>:</td>
-          <td>Tabitha Glorya Yobelitha Sirait</td>
-        </tr>
-        <tr>
-          <td>NIM</td>
-          <td>:</td>
-          <td><b>102022400238</b></td>
-        </tr>
-        <tr>
-          <td>Fakultas</td>
-          <td>:</td>
-          <td><i>Rekayasa Industri</i></td>
-        </tr>
-        <tr>
-          <td>Prodi</td>
-          <td>:</td>
-          <td><u>S1 Sistem Informasi</u></td>
-        </tr>
-        <tr>
-          <td>Angkatan</td>
-          <td>:</td>
-          <td>2024</td>
-        </tr>
-        <tr>
-          <td colspan="3">
-            <a href="https://github.com" target="_self">GitHub</a> - 
-            <a href="https://telkomuniversity.ac.id" target="_blank">Telkom University</a>
-          </td>
-        </tr>
-    </table>
+  <!-- Foto masing-masing -->
+  <img src="WhatsApp Image 2025-09-27 at 12.31.04_17ec25b6.jpg" alt="Foto Profil" class="profile-pic">
 
-    <a href="https://www.instagram.com/siraittabitha" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" 
-             alt="Instagram" class="instagram-icon">
-    </a>
+  <!-- Tabel Identitas -->
+  <table style="width:60%">
+    <tr>
+      <td>Nama</td>
+      <th>:</th>
+      <td>Tabitha Glorya Yobelitha Sirait</td>
+    </tr>
+    <tr>
+      <td>NIM</td>
+      <th>:</th>
+      <td><b>102022400238</b></td>
+    </tr>
+    <tr>
+      <td>Fakultas</td>
+      <th>:</th>
+      <td><i>Rekayasa Industri</i></td>
+    </tr>
+    <tr>
+      <td>Program Studi</td>
+      <th>:</th>
+      <td><u>S1 Sistem Informasi</u></td>
+    </tr>
+    <tr>
+      <td>Angkatan</td>
+      <th>:</th>
+      <td>2024</td>
+    </tr>
+  </table>
+
+  <!-- Ikon Sosial Media -->
+  <div class="social-icons">
+    <a href="https://twitter.com" target="_blank">X</a>
+    <a href="https://github.com" target="_blank">GH</a>
+    <a href="https://instagram.com" target="_blank">IG</a>
+    <a href="https://telkomuniversity.ac.id" target="_blank">Web</a>
+  </div>
 
 </body>
 </html>
